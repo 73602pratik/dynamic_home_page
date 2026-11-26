@@ -60,8 +60,3 @@ The EDA script writes summary files to `reports/` and prints target prevalence a
 
 ## Important modeling note
 The `applied_*_90d` columns are targets, **not input features**. Eligibility flags and any features derived from future outcomes need careful treatment. In Step 2 we will define a prediction-time feature set and use a leakage-safe split. For a production-grade causal evaluation, offline metrics alone are not enough; an A/B test or other appropriate experimental design is needed to measure incremental impact.
-
-## Interview explanation for Step 1
-"I started by creating a reproducible synthetic customer dataset with profile, engagement, eligibility, and historical outcome fields. I documented the schema and added validation checks for row counts, unique IDs, data types, ranges, missing values, and binary flags. I also explored target prevalence before training, because class imbalance affects metric selection and model evaluation."
-
-Only use that explanation to describe this portfolio implementation after you have run and understood the code.
