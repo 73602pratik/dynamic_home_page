@@ -1,0 +1,38 @@
+@'
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated datasets
+data/*.parquet
+
+# Trained models
+models/
+
+# Generated reports
+reports/
+
+# Full local environment snapshot
+requirements-full.txt
+
+# Temporary files
+*.log
+*.tmp
+'@ | Set-Content -Encoding UTF8 .gitignore
